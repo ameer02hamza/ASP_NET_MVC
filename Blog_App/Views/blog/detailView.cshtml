@@ -1,0 +1,20 @@
+﻿@model Blog_App.Models.blogModel
+@{
+    ViewBag.Title = "detailView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card mb-4">
+    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+    <div class="card-body">
+        <h2 class="card-title"> @Model.blogTitle</h2>
+        <p class="card-text">@Model.blogText</p>
+    </div>
+    <div class="card-footer text-muted">
+        created on
+        @Model.blogCreated
+        
+        @Model.blogComment.Comment
+    </div>
+</div>
+
